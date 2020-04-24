@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Beat Generator</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/purecss@1.0.1/build/pure-min.css"
+      integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div>
+      <h1 id="root">Inspiration?</h1>
+      <button onclick="setInspiration()">Click to generate beat scheme</button>
+      <h1 id="sample">Sample Type?</h1>
+      <button onclick="setTypeOfSample()">Click to generate sample type</button>
+      <h1 id="drums">Drum Type?</h1>
+      <button onclick="setTypeOfDrums()">Click to generate drum type</button>
+      <h1 id="melody">Melody Type?</h1>
+      <button onclick="setTypeOfMelody()">Click to generate melody type</button>
+      <h1 id="LP">Location of LP?</h1>
+      <button onclick="setLPlocation()">Click to generate LP location</button>
+      <h1 id="key">Scale?</h1>
+      <button onclick="setKey()">Click to generate random scale</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
