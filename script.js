@@ -349,7 +349,8 @@ linkedinLI.appendChild(linkedinA);
 var beatLI = document.createElement("li");
 var beatA = document.createElement("a");
 beatA.innerHTML = "Beat Generator";
-beatA.href = "/beat-generator";
+beatA.href =
+  "https://davidhanover.github.io/productivityHomepage/beat-generator/";
 beatA.target = "_blank";
 beatLI.appendChild(beatA);
 //get the list of links and append all these elements
