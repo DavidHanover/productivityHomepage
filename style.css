@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+  font-family: "Merriweather", serif;
+  background-color: rgb(255, 198, 198);
+  --mainBG: rgb(250, 223, 223);
+  --secondBG: rgb(255, 0, 98);
+  --lightBG1: rgb(226, 211, 214);
+  --lightBG2: rgb(235, 220, 223);
+  --mainFnt: rgb(32, 36, 36);
+  --highlightFnt: rgb(199, 99, 18);
+  --leftPadAll: 1em;
+}
+body {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+ul {
+  list-style: none;
+}
+
+.navbar {
+  display: block;
+  min-height: 4vw;
+  margin: 0.25em;
+}
+.title {
+  display: inline-block;
+  background-color: var(--secondBG);
+  padding: 0.1em 0 0 0.1em;
+  font-weight: 700;
+  font-style: italic;
+  letter-spacing: 0.5em;
+  font-size: 28px;
+  width: 90vw;
+  text-align: start;
+}
+
+.linksList {
+  width: 80vw;
+  text-align: left;
+  height: 100vh;
+  color: var(--highlightFnt);
+  background-color: var(--lightBG2);
+}
+
+.linksList > li > a {
+  color: var(--mainFnt);
+  font-weight: 500;
+  font-size: 20px;
+  padding-left: 0.25em;
+  text-align: left;
+  background-color: var(--lightBG2);
+}
+.linksList > li > a:hover {
+  color: var(--highlightFnt);
+  font-weight: 700;
+}
+.linksList > li {
+  padding: 0.25em 0 0.5em 0;
+
+  background-color: var(--lightBG2);
+}

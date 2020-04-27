@@ -335,7 +335,7 @@ hnThreadA.target = "_blank";
 hnThreadLI.appendChild(hnThreadA);
 //leet code, same as above
 lcA.href = todaysLC.link;
-lcA.innerHTML = todaysLC.name;
+lcA.innerHTML = `Daily Leet: ${todaysLC.name}`;
 lcA.target = "_blank";
 lcLI.appendChild(lcA);
 //finally do simple linkedin setup
