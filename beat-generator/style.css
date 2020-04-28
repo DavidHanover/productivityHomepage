@@ -1,0 +1,37 @@
+* {
+  --darkBG: rgb(24, 24, 58);
+}
+@font-face {
+  font-family: "BladeRunner";
+  src: url(BLADRMF.ttf);
+}
+
+body {
+  background-color: var(--darkBG);
+}
+
+.title {
+  text-align: center;
+  font-family: BladeRunner;
+  color: chartreuse;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  max-width: 90vw;
+}
+
+.schemes {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  background-color: var(--darkBG);
+}
+
+.beatGen {
+  margin: 1em;
+  padding: 0.4em;
+  max-width: 25vw;
+  border: cornflowerblue 1px solid;
+  background-color: cornsilk;
+}
