@@ -1,3 +1,5 @@
+edit:  please don't judge this code as production-ready.  this is simply a hacked-up html file I built to be a placeholder for distracting sites like discord, youtube & reddit.
+
 This is meant to be a productivity homepage for when I open up my web-browser every day.
 
 My intention is to host it on github pages.
