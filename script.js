@@ -421,9 +421,9 @@ let courses = [
 //set up random generator for leetcode
 //and also set up the date for the HN thread
 var thisMonth = `${months[d.getMonth()]}-${d.getFullYear()}`;
-var todaysLC = leets[Math.ceil(Math.random() * 74)];
-var todaysSystem = systems[Math.ceil(Math.random() * 72)];
-var todaysCourse = courses[Math.ceil(Math.random() * 6)];
+var todaysLC = leets[Math.ceil(Math.random() * 74) - 1];
+var todaysSystem = systems[Math.ceil(Math.random() * 72) - 1];
+var todaysCourse = courses[Math.ceil(Math.random() * 6) - 1];
 //set up all the anchors..... hn = HackerNews lc = LeetCode
 var hnThreadA = document.createElement("a");
 var lcA = document.createElement("a");
