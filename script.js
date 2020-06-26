@@ -430,12 +430,18 @@ var lcA = document.createElement("a");
 var linkedinA = document.createElement("a");
 var systemA = document.createElement("a");
 var courseA = document.createElement("a");
+var btbsweA = document.createElement("a");
+var dribbleA = document.createElement("a");
+var teamblindA = document.createElement("a");
 //setting up all the list item parents
 var hnThreadLI = document.createElement("li");
 var lcLI = document.createElement("li");
 var linkedinLI = document.createElement("li");
 var systemDes = document.createElement("li");
 var courseLI = document.createElement("li");
+var btbsweLI = document.createElement("li");
+var dribbleLI = document.createElement("li");
+var teamblindLI = document.createElement("li");
 courseA.href = todaysCourse.URL;
 courseA.innerHTML = `Course: ${todaysCourse.title}`;
 courseA.target = "_blank";
@@ -470,11 +476,30 @@ systemA.href = `https://google.com/search?q=system+${todaysSystem}`;
 systemA.target = "_blank";
 systemA.innerHTML = `System Design: ${todaysSystem}`;
 systemDes.appendChild(systemA);
+
+btbsweA.innerHTML = "BackToBackSWE";
+btbsweA.href = "https://backtobackswe.com/platform/content";
+btbsweA.target = "_blank";
+btbsweLI.appendChild(btbsweA);
+
+dribbleA.innerHTML = "Dribbble";
+dribbleA.href = "https://dribbble.com/shots/popular/web-design";
+dribbleA.target = "_blank";
+dribbleLI.appendChild(dribbleA);
+
+teamblindA.innerHTML = "TeamBlind: Who is hiring?";
+teamblindA.href = "https://www.teamblind.com/whoshiring";
+teamblindA.target = "_blank";
+teamblindLI.appendChild(teamblindA);
+
 //get the list of links and append all these elements
 var links = document.getElementById("links");
-links.appendChild(lcLI);
-links.appendChild(hnThreadLI);
 links.appendChild(linkedinLI);
-links.appendChild(beatLI);
+links.appendChild(hnThreadLI);
+links.appendChild(teamblindLI);
+links.appendChild(btbsweLI);
+links.appendChild(lcLI);
 links.appendChild(systemDes);
 links.appendChild(courseLI);
+links.appendChild(dribbleLI);
+links.appendChild(beatLI);
