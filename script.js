@@ -433,6 +433,7 @@ var courseA = document.createElement("a");
 var btbsweA = document.createElement("a");
 var dribbleA = document.createElement("a");
 var teamblindA = document.createElement("a");
+var angelCoA = document.createElement("a");
 //setting up all the list item parents
 var hnThreadLI = document.createElement("li");
 var lcLI = document.createElement("li");
@@ -442,6 +443,7 @@ var courseLI = document.createElement("li");
 var btbsweLI = document.createElement("li");
 var dribbleLI = document.createElement("li");
 var teamblindLI = document.createElement("li");
+var angelCoLi = document.createElement("li");
 courseA.href = todaysCourse.URL;
 courseA.innerHTML = `Course: ${todaysCourse.title}`;
 courseA.target = "_blank";
@@ -492,9 +494,15 @@ teamblindA.href = "https://www.teamblind.com/whoshiring";
 teamblindA.target = "_blank";
 teamblindLI.appendChild(teamblindA);
 
+angelCoA.innerHTML = "angel.co - Start-up Jobs";
+angelCoA.href = "https://angel.co/jobs";
+angelCoA.target = "_blank";
+angelCoLi.appendChild(angelCoA);
+
 //get the list of links and append all these elements
 var links = document.getElementById("links");
 links.appendChild(linkedinLI);
+links.appendChild(angelCoLi);
 links.appendChild(hnThreadLI);
 links.appendChild(teamblindLI);
 links.appendChild(btbsweLI);
